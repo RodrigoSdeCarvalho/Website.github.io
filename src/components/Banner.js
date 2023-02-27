@@ -11,7 +11,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Machine Learning Engineer", "AI Engineer", "Data Scientist" ];
+  const toRotate = [ "a Machine Learning Engineer", "an AI Engineer", "a Data Scientist" ];
   const period = 2000;
 
   useEffect(() => {
@@ -56,7 +56,7 @@ export const Banner = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Website</span>
-                <h1>{`Hi! I'm Rodrigo, a`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Machine Learning Engineer", "AI Engineer", "Data Scientist" ]'><span className="wrap">{text}</span></span></h1>
+                <h1>{`Hi! I'm Rodrigo, `} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "a Machine Learning Engineer", "an AI Engineer", "a Data Scientist" ]'><span className="wrap">{text}</span></span></h1>
                   <p>I'm a CS undergrad student at UFSC and a Machine Learning Intern at LISHA. Currently working with DNNs/CNNs and Classification ML models to identify failures/anomalies in hydroeletric energy generators.</p>
                   <a href="https://www.linkedin.com/login/pt?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fpublic-profile%2Fsettings&fromSignIn=true&trk=public_profile-settings_top-card-primary-button-sign-in-to-connect" target="_blank"><button onClick={() => console.log('connect')}>Connect in LinkedIn <ArrowRightCircle size={25} /></button></a>
               </div>}

@@ -56,7 +56,7 @@ export const NavBar = () => {
                 {/* <a href="#"><img src={navIcon3} alt="" /></a> */}
               </div>
               <HashLink to='#connect'>
-                <button className="vvd"><span>Send an e-mail!</span></button>
+                <button className="vvd"><span>Contact me!</span></button>
               </HashLink>
             </span>
           </Navbar.Collapse>
